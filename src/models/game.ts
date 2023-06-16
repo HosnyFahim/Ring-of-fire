@@ -1,7 +1,7 @@
 export class Game {
     public players: string[] = [];
     public stack: string[] = [];
-    public playedcard: string[] = [];
+    public playedcards: string[] = [];
     public currnetPlayer: number = 0;
     pickCardAnimation: any;
 
