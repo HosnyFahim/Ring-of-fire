@@ -3,6 +3,7 @@ export class Game {
     public stack: string[] = [];
     public playedcard: string[] = [];
     public currnetPlayer: number = 0;
+    pickCardAnimation: any;
 
     constructor() {
         for (let i = 1; i < 14; i++) {

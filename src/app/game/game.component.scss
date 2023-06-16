@@ -30,7 +30,7 @@
 }
 
 .pick-card {
-    transform: scale(1.3) translateX(140px) translateY(-180px) rotate(-30deg);
+    transform: scale(1.1) translateX(140px) translateY(-180px) rotate(-30deg);
     animation: pick-card-animation 700ms ease-in-out;
 }
 
@@ -48,6 +48,6 @@
     }
 
     100% {
-        transform: scale(1.3) translateX(140px) translateY(-180px) rotate(-30deg);
+        transform: scale(1.1) translateX(140px) translateY(-180px) rotate(-30deg);
     }
 }
