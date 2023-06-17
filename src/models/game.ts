@@ -1,8 +1,8 @@
 export class Game {
-    public players: string[] = ['Hosny', 'Samya', 'SioBio'];
+    public players: string[] = [];
     public stack: string[] = [];
     public playedcards: string[] = [];
-    public currnetPlayer: number = 0;
+    public currentPlayer: number = 0;
     pickCardAnimation: any;
 
     constructor() {

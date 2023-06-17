@@ -46,6 +46,17 @@
     right: 0;
 }
 
+.add-btn {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    background-color: #A16C4E;
+
+    &:hover {
+        filter: brightness(1.4);
+    }
+}
+
 
 
 

@@ -1,7 +1,7 @@
 .player {
     display: flex;
     align-items: center;
-    background-color: #A16C4E;
+    background-color: gray;
     width: 300px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -25,4 +25,8 @@
         object-fit: cover;
         border-radius: 100%;
     }
+}
+
+.player-active {
+    background-color: #A16C4E !important;
 }
