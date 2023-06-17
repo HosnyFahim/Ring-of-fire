@@ -1,14 +1,14 @@
 .player {
     display: flex;
     align-items: center;
-    background-color: orange;
+    background-color: #A16C4E;
     width: 300px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 
     &:hover {
         cursor: pointer;
-        filter: brightness(1.1);
+        filter: brightness(1.4);
     }
 
     span {
