@@ -1,17 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-player',
   templateUrl: './player.component.html',
   styleUrls: ['./player.component.scss']
 })
-export class PlayerComponent implements OnInit {
+export class PlayerComponent {
   @Input() name!: string;
+  @Input() image = '2.png';
   @Input() playerActive: boolean = false;
-
-  constructor() {}
-
-  ngOnInit(): void {
-    
-  }
 }

@@ -1,0 +1,29 @@
+.player {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100px;
+    background-color: lightgray;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    span {
+        font-size: 14px;
+        max-width: 100px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    img {
+        margin-top: 16px;
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
+
+.player-active {
+    background-color: orange !important;
+}
