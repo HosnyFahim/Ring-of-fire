@@ -26,13 +26,13 @@
 
     <app-game-info [card]="game.currentCard" class="pin-bottom"></app-game-info>
 
-    <button mat-fab color="primary" (click)="openDialog()" class="btn-add">
+    <button mat-fab color="primary" style="background-color: #A16C4E;" (click)="openDialog()" class="btn-add">
         <mat-icon>add</mat-icon>
     </button>
 
 </div>
 
 <div *ngIf="game.gameOver" class="gameOver">
-    <img src="/assets/img/gameOver.png">
-    <button mat-raised-button color="primary" (click)="restartGame()">Restart</button>
+    <img src="/assets/img/game/game-g4d5393000_640.png">
+    <button mat-raised-button style="background: #A16C4E;" (click)="restartGame()">Restart</button>
 </div>

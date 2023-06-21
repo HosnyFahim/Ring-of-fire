@@ -4,5 +4,50 @@ body {
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+@media (max-width: 720px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 721px) {
+    .hide-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .gameOver {
+        img {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .gameOver {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .gameOver {
+        img {
+            width: 200px;
+        }
+    }
+}
