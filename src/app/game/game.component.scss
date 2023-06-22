@@ -125,8 +125,12 @@
     bottom: 32px;
     z-index: 2;
 
+    &:hover {
+        filter: brightness(1.2);
+    }
+
     @media (max-width: 720px) {
-        bottom: 200px;
+        bottom: 140px;
     }
 }
 

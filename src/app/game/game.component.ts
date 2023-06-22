@@ -40,11 +40,16 @@ export class GameComponent implements OnInit{
   }
 
   takeCard() {
-    if(this.game.players.length > 0) {
-      if(this.game.stack.length == 0) {
+    if (this.game.players.length > 1) {
+      if (this.game.stack.length == 0) {
         this.setGameOver();
-      } else if(!this.game.pickCardAnimation && this.game.players.length > 0) {
+      } else if (!this.game.pickCardAnimation && this.game.players.length > 0) {
         this.playCard();
+        
+        if (this.game.stack.length == 1) {
+          // Letzte Karte wurde genommen, das Spiel ist vorbei
+          this.setGameOver();
+        }
       }
     } else {
       this.openDialog();
@@ -52,7 +57,7 @@ export class GameComponent implements OnInit{
   }
 
   playCard() {
-    if(this.game.stack.length > 0){
+    if(this.game.stack.length > 1){
       let popedCard = this.game.stack.pop() as string;
       this.game.currentCard = popedCard;
       this.game.pickCardAnimation = true;
