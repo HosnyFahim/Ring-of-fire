@@ -14,13 +14,13 @@
         <div class="card-stack">
             <!-- Card stack -->
             <img [ngStyle]="{'right.px': i*5}" *ngFor="let c of [0,1,2,3]; let i = index;"
-                src="/assets/img/cards/card_cover.png">
-            <img (click)="takeCard()" class="top-card" style="right: 25px" src="/assets/img/cards/card_cover.png">
+                src="assets/img/cards/card_cover.png">
+            <img (click)="takeCard()" class="top-card" style="right: 25px" src="assets/img/cards/card_cover.png">
             <!-- Stack for played cards -->
-            <img *ngFor="let card of game.playedCards" class="played-card" src="/assets/img/cards/{{ card }}.png">
+            <img *ngFor="let card of game.playedCards" class="played-card" src="assets/img/cards/{{ card }}.png">
             <!-- Current card (animation) -->
             <img (click)="takeCard()" *ngIf="game.pickCardAnimation" [class.pick-card]="game.pickCardAnimation"
-                class="pick-card" style="right: 25px" src="/assets/img/cards/{{ game.currentCard }}.png">
+                class="pick-card" style="right: 25px" src="assets/img/cards/{{ game.currentCard }}.png">
         </div>
     </div>
 
@@ -33,6 +33,6 @@
 </div>
 
 <div *ngIf="game.gameOver" class="gameOver">
-    <img src="/assets/img/game/game-g4d5393000_640.png">
+    <img src="assets/img/game/game-g4d5393000_640.png">
     <button mat-raised-button style="background: #A16C4E;" (click)="restartGame()">Restart</button>
 </div>

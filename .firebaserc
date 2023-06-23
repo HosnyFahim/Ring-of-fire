@@ -1,13 +1,4 @@
 {
-  "targets": {
-    "ring-of-fire-4755b": {
-      "hosting": {
-        "ring-of-fire": [
-          "ring-of-fire-4755b"
-        ]
-      }
-    }
-  },
   "projects": {
     "default": "ring-of-fire-4755b"
   }
